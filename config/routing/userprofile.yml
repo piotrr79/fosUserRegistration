@@ -1,0 +1,20 @@
+userprofile:
+    pattern:  /
+    defaults: { _controller: "WebsolutioCijBundle:UserProfile:index" }
+    
+userprofile_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "WebsolutioCijBundle:UserProfile:show" }
+            
+userprofile_create_profile:
+    pattern:  /createuserprofile
+    defaults: { _controller: "WebsolutioCijBundle:UserProfile:createuserprofile" }
+    
+userprofile_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "WebsolutioCijBundle:UserProfile:edit" }
+
+userprofile_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "WebsolutioCijBundle:UserProfile:update" }
+    requirements: { _method: post|put }
